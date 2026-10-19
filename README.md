@@ -19,3 +19,8 @@ GitFlow with protected main and develop branches.
 
 ## CI/CD
 CI via GitHub Actions. Images pushed to Amazon ECR.
+
+
+## Platform completion notes
+
+This service is part of the AWS clothing-platform starter. Keep order creation idempotent, validate inventory before confirming orders, and use an outbox/saga pattern for payment and shipping integration. The current starter persistence is not production durable; configure a managed database and migrations before deployment.
